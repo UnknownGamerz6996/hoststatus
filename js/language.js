@@ -5,7 +5,7 @@ const LanguageManager = (() => {
     en: {
       // Page title and header
       pageTitle: "System Status",
-      pageSubtitle: "Real-time server monitoring",
+      pageSubtitle: "Zero Lag Hosting Server Monitoring",
       refresh: "Refresh",
       refreshing: "Refreshing...",
       getUpdates: "Get Updates",
@@ -53,7 +53,7 @@ const LanguageManager = (() => {
 
       // Footer
       lastUpdated: "Last updated",
-      copyright: "© 2025 Your Company. All rights reserved.",
+      copyright: "© 2025 ZeroLag Hosting. All rights reserved.",
 
       // Languages
       english: "English",
@@ -62,7 +62,7 @@ const LanguageManager = (() => {
     ro: {
       // Page title and header
       pageTitle: "Stare Sistem",
-      pageSubtitle: "Monitorizare servere în timp real",
+      pageSubtitle: "Monitorizare server de găzduire Zero Lag",
       refresh: "Reîmprospătare",
       refreshing: "Se reîmprospătează...",
       getUpdates: "Primește Actualizări",
@@ -110,7 +110,7 @@ const LanguageManager = (() => {
 
       // Footer
       lastUpdated: "Ultima actualizare",
-      copyright: "© 2025 Compania Ta. Toate drepturile rezervate.",
+      copyright: "© 2025 ZeroLag HOsting. Toate drepturile rezervate.",
 
       // Languages
       english: "Engleză",
