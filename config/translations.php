@@ -118,7 +118,7 @@ return [
 
        // Footer
        'lastUpdated' => 'Ultima actualizare',
-       'copyright' => '© 2025 ZeroLag Hosting. Toate drepturile rezervate.',
+       'copyright' => '© 2025 ZeroLag Hostin. Toate drepturile rezervate.',
 
        // Languages
        'english' => 'Engleză',
