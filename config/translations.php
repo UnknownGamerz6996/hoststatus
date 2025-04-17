@@ -58,7 +58,7 @@ return [
 
        // Footer
        'lastUpdated' => 'Last updated',
-       'copyright' => '© 2025 Your Company. All rights reserved.',
+       'copyright' => '© 2025 ZeroLag Hosting. All rights reserved.',
 
        // Languages
        'english' => 'English',
@@ -118,7 +118,7 @@ return [
 
        // Footer
        'lastUpdated' => 'Ultima actualizare',
-       'copyright' => '© 2025 Compania Ta. Toate drepturile rezervate.',
+       'copyright' => '© 2025 ZeroLag Hosting. Toate drepturile rezervate.',
 
        // Languages
        'english' => 'Engleză',
