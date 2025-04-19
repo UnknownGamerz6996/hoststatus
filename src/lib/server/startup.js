@@ -7,21 +7,9 @@ import db from "./db/db.js";
 import { GetAllSiteData, GetMonitorsParsed } from "./controllers/controller.js";
 import { HashString } from "./tool.js";
 import { fileURLToPath } from "url";
-import { dirname } from "path";
+import { dirname, resolve } from "path";
+import fs from "fs";
 import version from "../version.js";
-
-// === CLI ARGUMENT PARSING ===
-const args = process.argv.slice(2);
-let host = "status.zerolaghosting.org"; // Default host set here
-
-args.forEach((arg, index) => {
-  if (arg === "--host" && args[index + 1]) {
-    host = args[index + 1];
-  }
-});
-
-console.log(`Host set to: ${host}`);
-// ==============================
 
 const jobs = [];
 process.env.TZ = "UTC";
@@ -71,7 +59,7 @@ const scheduleCronJobs = async () => {
   isStartUP = false;
 };
 
-async function Startup(customHost = "status.zerolaghosting.org") {
+async function Startup() {
   const mainJob = Cron(
     "* * * * *",
     async () => {
@@ -91,7 +79,7 @@ async function Startup(customHost = "status.zerolaghosting.org") {
       return;
     }
     console.log(data);
-    console.log(`Kener version ${version()} is running on host ${customHost}!`);
+    console.log(`Kener version ${version()} is running!`);
   });
 }
 
@@ -100,7 +88,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 if (process.argv[1] === __filename) {
-  Startup(host);
+  Startup();
 }
 
 export default Startup;
